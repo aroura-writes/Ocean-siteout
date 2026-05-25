@@ -1,5 +1,4 @@
-import { createAppHandler } from 'outstatic/server'
+import { OutstaticApi } from 'outstatic'
 
-const handler = createAppHandler()
-
-export { handler as GET, handler as POST }
+export const GET = OutstaticApi.GET
+export const POST = OutstaticApi.POST
