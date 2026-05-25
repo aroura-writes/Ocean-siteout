@@ -1,8 +1,8 @@
+import MarkdownIt from 'markdown-it';
 import { getDocumentBySlug, getDocuments } from 'outstatic/server'
 import { notFound } from 'next/navigation'
-import markdownit from 'markdownit'
 
-const md = new markdownit({ html: true, linkify: true, typographer: true })
+const md = new MarkdownIt({ html: true, linkify: true, typographer: true })
 
 export async function generateStaticParams() {
   try {

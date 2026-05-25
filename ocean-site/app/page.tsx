@@ -143,7 +143,7 @@ export default function HomePage() {
           <div className="reveal-group" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', margin: '1.5rem 0 3rem' }}>
             {[
               { name: 'Anglerfish', color: '#38bdf8', desc: 'Uses a bioluminescent lure to attract prey in total darkness. Light produced by symbiotic bacteria inside the lure.' },
-              { name: 'Dinoflagellates', color: '#2dd4bf', desc: 'Microscopic plankton behind the "blue wave" effect on coastlines. A wave's disturbance triggers their flash.' },
+              { name: 'Dinoflagellates', color: '#2dd4bf', desc: "Microscopic plankton behind the 'blue wave' effect on coastlines. A wave's disturbance triggers their flash." },
               { name: 'Firefly squid', color: '#a78bfa', desc: 'Thousands of photophores across its body produce a bright blue glow used for camouflage and communication.' },
               { name: 'Vampire squid', color: '#fbbf24', desc: 'Can flash every photophore simultaneously — a defensive dazzle display to confuse predators in the abyss.' },
             ].map(({ name, color, desc }) => (
@@ -188,7 +188,7 @@ export default function HomePage() {
               <div key={label as string} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
                 <span style={{ fontSize: '11px', color: '#5d8faa', minWidth: '120px', textAlign: 'right' }}>{label}</span>
                 <div style={{ flex: 1, height: '6px', background: '#0c2236', borderRadius: '3px', overflow: 'hidden' }}>
-                  <div className="depth-fill" style={{ height: '100%', borderRadius: '3px', width: 0, transition: 'width 1.2s cubic-bezier(.22,1,.36,1)', background: bg as string, ['--w']: w }}/>
+                  <div className="depth-fill" style={{ height: '100%', borderRadius: '3px', width: 0, transition: 'width 1.2s cubic-bezier(.22,1,.36,1)', background: bg as string, '--w': w }}/>
                 </div>
                 <span style={{ fontSize: '11px', color: '#7baccc', minWidth: '36px' }}>{pct}</span>
               </div>
