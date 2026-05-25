@@ -1,0 +1,16 @@
+{
+  "collections": [
+    {
+      "name": "Posts",
+      "slug": "posts",
+      "fields": [
+        { "name": "title",       "fieldType": "string",   "required": true },
+        { "name": "publishedAt", "fieldType": "date",     "required": true },
+        { "name": "status",      "fieldType": "string",   "required": true },
+        { "name": "description", "fieldType": "string",   "required": false },
+        { "name": "coverImage",  "fieldType": "image",    "required": false },
+        { "name": "content",     "fieldType": "string",   "required": false }
+      ]
+    }
+  ]
+}
