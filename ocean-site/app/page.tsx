@@ -1,3 +1,5 @@
+'use client'
+
 import ScrollReveal from '@/components/ScrollReveal'
 
 export default function HomePage() {
@@ -186,7 +188,7 @@ export default function HomePage() {
               <div key={label as string} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
                 <span style={{ fontSize: '11px', color: '#5d8faa', minWidth: '120px', textAlign: 'right' }}>{label}</span>
                 <div style={{ flex: 1, height: '6px', background: '#0c2236', borderRadius: '3px', overflow: 'hidden' }}>
-                  <div className="depth-fill" style={{ height: '100%', borderRadius: '3px', width: 0, transition: 'width 1.2s cubic-bezier(.22,1,.36,1)', background: bg as string, ['--w' as string]: w }}/>
+                  <div className="depth-fill" style={{ height: '100%', borderRadius: '3px', width: 0, transition: 'width 1.2s cubic-bezier(.22,1,.36,1)', background: bg as string, ['--w']: w }}/>
                 </div>
                 <span style={{ fontSize: '11px', color: '#7baccc', minWidth: '36px' }}>{pct}</span>
               </div>
