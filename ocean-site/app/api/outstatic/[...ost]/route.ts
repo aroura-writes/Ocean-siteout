@@ -1,9 +1,5 @@
-import { outstaticRouter, GetServerSidePropsContext } from 'outstatic/server'
+import { createAppHandler } from 'outstatic/server'
 
-export async function GET(request: Request, context: GetServerSidePropsContext) {
-  return outstaticRouter(request, context)
-}
+const handler = createAppHandler()
 
-export async function POST(request: Request, context: GetServerSidePropsContext) {
-  return outstaticRouter(request, context)
-}
+export { handler as GET, handler as POST }
